@@ -1,5 +1,16 @@
 #!/bin/bash
 
+pip install pyinstaller
+
+pyinstaller \
+  --onefile \
+  --add-data "assets:assets" \
+  --hidden-import PIL._tkinter_finder \
+  --name WinDraw \
+  draw_window.py
+
+cp dist/Windraw .
+
 DESKTOP_INSTALL_PATH="$HOME/.local/share/applications"
 ICON_INSTALL_PATH="$HOME/.local/share/icons/hicolor/256x256/apps"
 

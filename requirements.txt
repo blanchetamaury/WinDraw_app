@@ -1,0 +1,4 @@
+pillow==8.4.0
+tkinter==8.6
+mss==10.0.0
+pyinstaller==6.14.2

@@ -1,7 +1,6 @@
 import tkinter as tk
 from PIL import Image, ImageTk
 import mss
-from functools import partial
 
 class color:
     color = ''

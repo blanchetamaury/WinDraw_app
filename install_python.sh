@@ -1,5 +1,14 @@
 #!/bin/bash
 
+sudo apt update
+sudo apt upgrade
+sudo apt install python3
+sudo apt install python3-venv
+
+python3 -m venv windraw
+
+source windraw/bin/activate
+
 pip install -r requirements.txt
 
 pyinstaller \
@@ -9,4 +18,4 @@ pyinstaller \
   --name WinDraw \
   draw_window.py
 
-cp dist/Windraw .
+cp dist/WinDraw .

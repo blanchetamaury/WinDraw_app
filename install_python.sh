@@ -3,6 +3,7 @@
 sudo apt update
 sudo apt upgrade
 sudo apt install python3
+sudo apt install python3-tk
 sudo apt install python3-venv
 
 python3 -m venv windraw
